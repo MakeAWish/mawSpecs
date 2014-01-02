@@ -104,22 +104,32 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 </ul><h2>
 <a name="utilisation" class="anchor" href="#utilisation"><span class="octicon octicon-link"></span></a>Utilisation</h2>
 
-<p>Lorsqu'un utilisateur créé ou est ajouté à un événement, celui-ci apparaît dans sa liste d'événements. </p>
+<p>Lorsqu'un utilisateur créé ou est ajouté à un événement, celui-ci apparaît dans sa liste d'événements. L’événement passe alors par plusieurs phases qui caractérisent l'accès aux vœux de l'utilisateur courant et des autres membres de l'événement.</p>
+
+<p>Exemple : création d'un événement "Noël", prenant fin le 25 décembre, avec verrouillage du 1er au 31 décembre, dont tous les participants ont le droit d'ajouter des vœux.</p>
 
 <h3>
 <a name="ev%C3%A9nement-ouvert" class="anchor" href="#ev%C3%A9nement-ouvert"><span class="octicon octicon-link"></span></a>Evénement "ouvert"</h3>
 
-<p>Tant que l’événement est ouvert, c'est à dire que la date courante est inférieure à la date butoir et à la date de verrouillage si elle existe, il peut alors y accéder et consulter la liste des participants et les vœux qui y ont été ajoutés (y compris les siens). Il peut ajouter ou retirer ses propres voeux de l'événement.</p>
+<p>Tant que l’événement est ouvert, c'est à dire que la date courante est inférieure à la date butoir et à la date de verrouillage si elle existe, il peut alors y accéder et consulter la liste des participants et les vœux qui y ont été ajoutés (y compris les siens). Il peut ajouter ou retirer ses propres vœux à l'événement.</p>
+
+<p>Exemple : avant le 1er décembre, tout les participants peuvent ajouter et enlever des vœux à l'événement.</p>
 
 <h3>
 <a name="ev%C3%A9nement-verrouill%C3%A9" class="anchor" href="#ev%C3%A9nement-verrouill%C3%A9"><span class="octicon octicon-link"></span></a>Evénement verrouillé</h3>
 
 <p>Quand l'événement passe la date de verrouillage, il entre dans une phase spéciale pendant laquelle les utilisateurs peuvent uniquement y ajouter des vœux, mais pas les retirer. Lorsqu'ils consultent l'événement, ils ne voient pas leur propres vœux, ou alors séparément des autres, ou alors dans une mise-en-forme spéciale qui leur interdit de les consulter et ne leur donne aucune information sur leur potentiel achat.</p>
 
+<p>Exemple : à partir du 1er décembre, "Noël" entre dans un verrouillage qui durera jusqu'au 31 décembre.
+Ainsi, même à la "fin" de l'événement le 25 décembre, le statut des "cadeaux" restera secret, afin de ne pas gâcher la surprise d'une réception après le 25 décembre. 
+Pendant cette phase, il sera possible d'ajouter des vœux à l'événement mais ni d'en enlever, ni de modifier ceux qui y sont attachés. Un utilisateur ayant ajouté un vœu ne pourra pas en connaitre le statut de réservation (le préservant ainsi de découvrir quels cadeaux lui seront offerts), mais il pourra consulter les statuts des vœux des autres utilisateurs, poser des options d'achat ou valider des achats.</p>
+
 <h3>
 <a name="ev%C3%A9nement-termin%C3%A9" class="anchor" href="#ev%C3%A9nement-termin%C3%A9"><span class="octicon octicon-link"></span></a>Evénement terminé</h3>
 
 <p>Un événement terminé est un événement qui a dépassé sa date de fin ET sa date de verrouillage si elle existe. L'événement est alors clôturé, c'est-à-dire qu'il n'est plus possible d'y ajouter un vœu. Les vœux qui y étaient présents rejoignent la liste privée de chacun des membres. L’événement n'est plus visible dans la liste des événements des utilisateurs en ayant fait partie.</p>
+
+<p>Exemple : à compter du 1er janvier, les vœux seront à nouveau visibles par les utilisateurs et rejoindront à nouveau leur liste privée. Ils pourront ainsi voir les éléments achetés par les autres utilisateurs, ou en option d'achat... mais cela ne devrait pas être un problème. L’événement terminant le 25 décembre, on peut supposer que les cadeaux auront été offerts avant !</p>
         </section>
 
         <aside id="sidebar">
@@ -145,7 +155,7 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
           </script>
           <script type="text/javascript">
             try {
-              var pageTracker = _gat._getTracker("UA-4257717");
+              var pageTracker = _gat._getTracker("UA-4257717-5");
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
