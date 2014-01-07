@@ -20,7 +20,7 @@
     <header>
       <div class="inner">
         <h1>Make a Wish</h1>
-        <h2>Une application de gestion de vœux, et de leurs achats par d'autres utilisateurs</h2>
+        <h2>Une application de gestion de vœux, et de leurs achats par d&#39;autres utilisateurs</h2>
         <a href="https://github.com/borisschapira/MakeAWish2" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -38,10 +38,13 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 **Attention : ** ces pages comme le code GitHub correspondent un projet en cours.</p>
 
 <hr><h1>
-<a name="v%C5%93ux" class="anchor" href="#v%C5%93ux"><span class="octicon octicon-link"></span></a>Vœux</h1>
+<a name="concepts" class="anchor" href="#concepts"><span class="octicon octicon-link"></span></a>Concepts</h1>
 
 <h2>
-<a name="d%C3%A9finition" class="anchor" href="#d%C3%A9finition"><span class="octicon octicon-link"></span></a>Définition</h2>
+<a name="v%C5%93ux" class="anchor" href="#v%C5%93ux"><span class="octicon octicon-link"></span></a>Vœux</h2>
+
+<h3>
+<a name="d%C3%A9finition" class="anchor" href="#d%C3%A9finition"><span class="octicon octicon-link"></span></a>Définition</h3>
 
 <p>Un vœu est caractérisé par :</p>
 
@@ -51,16 +54,21 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 <li>Un statut caractérisant sa visibilité par son propriétaire :
 
 <ul>
-<li>Totale : le vœu est uniquement présent dans la liste privée de l'utilisateur, ou dans des événements "ouverts". Aucune option d'achat ou déclaration d'achat n'a été émise sur ce vœu par un autre utilisateur. Son propriétaire peut le visualiser et le modifier à son gré.</li>
-<li>Verrouillé : le vœu est présent dans au moins un événement verrouillé, et/ou il est présent dans un événement "ouvert" mais un autre utilisateur a émis une option d'achat ou une une déclaration d'achat. Le propriétaire du vœu ne peut plus modifier le vœu et ne dispose d'aucune information sur son statut.</li>
+<li>
+<em>Totale</em> : le vœu est uniquement présent dans la liste privée de l'utilisateur, ou dans des événements "ouverts". Aucune option d'achat ou déclaration d'achat n'a été émise sur ce vœu par un autre utilisateur. Son propriétaire peut le visualiser et le modifier à son gré.</li>
+<li>
+<em>Verrouillé</em> : le vœu est présent dans au moins un événement verrouillé, et/ou il est présent dans un événement "ouvert" mais un autre utilisateur a émis une option d'achat ou une une déclaration d'achat. Le propriétaire du vœu ne peut plus modifier le vœu et ne dispose d'aucune information sur son statut.</li>
 </ul>
 </li>
 <li>Un statut caractérisant sa réservation par d'autres utilisateurs :
 
 <ul>
-<li>Libre : aucun autre utilisateur n'a décidé d'offrir ce veut</li>
-<li>Réservé : un utilisateur a émis une "option d'achat" sur le vœu</li>
-<li>Acheté : un utilisateur a confirmé l'achat du vœu</li>
+<li>
+<em>Libre</em> : aucun autre utilisateur n'a décidé d'offrir ce veut</li>
+<li>
+<em>Réservé</em> : un utilisateur a émis une "option d'achat" sur le vœu</li>
+<li>
+<em>Acheté</em> : un utilisateur a confirmé l'achat du vœu</li>
 </ul>
 </li>
 <li>Un ensemble de Questions/Réponses entre le propriétaire du vœu et d'autres utilisateurs (pour affiner un vœu, par exemple). Visibles par tous les utilisateurs ayant accès au vœu.</li>
@@ -68,16 +76,16 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 <li>{facultatif} L'appartenance à une gamme de prix</li>
 <li>{facultatif} L'appartenance à une catégorie</li>
 <li>{facultatif} Une collection d'URLs pointant vers des ressources distantes</li>
-</ul><h2>
-<a name="manipulation" class="anchor" href="#manipulation"><span class="octicon octicon-link"></span></a>Manipulation</h2>
+</ul><h3>
+<a name="manipulation" class="anchor" href="#manipulation"><span class="octicon octicon-link"></span></a>Manipulation</h3>
 
 <p>Le titulaire d'un compte peut lister ses envies dans un endroit privé, invisible aux autres utilisateurs. Cela lui permet de saisir, modifier, revenir sur ses vœux de la façon dont il le souhaite, sans contraintes.</p>
 
-<h1>
-<a name="ev%C3%A9nements" class="anchor" href="#ev%C3%A9nements"><span class="octicon octicon-link"></span></a>Evénements</h1>
-
 <h2>
-<a name="d%C3%A9finition-1" class="anchor" href="#d%C3%A9finition-1"><span class="octicon octicon-link"></span></a>Définition</h2>
+<a name="ev%C3%A9nements" class="anchor" href="#ev%C3%A9nements"><span class="octicon octicon-link"></span></a>Evénements</h2>
+
+<h3>
+<a name="d%C3%A9finition-1" class="anchor" href="#d%C3%A9finition-1"><span class="octicon octicon-link"></span></a>Définition</h3>
 
 <p>Un événement est caractérisé par : </p>
 
@@ -101,22 +109,22 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 <li>Une date de fin postérieure ou égale à la date butoir de l'événement</li>
 </ul>
 </li>
-</ul><h2>
-<a name="utilisation" class="anchor" href="#utilisation"><span class="octicon octicon-link"></span></a>Utilisation</h2>
+</ul><h3>
+<a name="utilisation" class="anchor" href="#utilisation"><span class="octicon octicon-link"></span></a>Utilisation</h3>
 
 <p>Lorsqu'un utilisateur créé ou est ajouté à un événement, celui-ci apparaît dans sa liste d'événements. L’événement passe alors par plusieurs phases qui caractérisent l'accès aux vœux de l'utilisateur courant et des autres membres de l'événement.</p>
 
 <p>Exemple : création d'un événement "Noël", prenant fin le 25 décembre, avec verrouillage du 1er au 31 décembre, dont tous les participants ont le droit d'ajouter des vœux.</p>
 
-<h3>
-<a name="ev%C3%A9nement-ouvert" class="anchor" href="#ev%C3%A9nement-ouvert"><span class="octicon octicon-link"></span></a>Evénement "ouvert"</h3>
+<h4>
+<a name="ev%C3%A9nement-ouvert" class="anchor" href="#ev%C3%A9nement-ouvert"><span class="octicon octicon-link"></span></a>Evénement "ouvert"</h4>
 
 <p>Tant que l’événement est ouvert, c'est à dire que la date courante est inférieure à la date butoir et à la date de verrouillage si elle existe, il peut alors y accéder et consulter la liste des participants et les vœux qui y ont été ajoutés (y compris les siens). Il peut ajouter ou retirer ses propres vœux à l'événement.</p>
 
 <p>Exemple : avant le 1er décembre, tout les participants peuvent ajouter et enlever des vœux à l'événement.</p>
 
-<h3>
-<a name="ev%C3%A9nement-verrouill%C3%A9" class="anchor" href="#ev%C3%A9nement-verrouill%C3%A9"><span class="octicon octicon-link"></span></a>Evénement verrouillé</h3>
+<h4>
+<a name="ev%C3%A9nement-verrouill%C3%A9" class="anchor" href="#ev%C3%A9nement-verrouill%C3%A9"><span class="octicon octicon-link"></span></a>Evénement verrouillé</h4>
 
 <p>Quand l'événement passe la date de verrouillage, il entre dans une phase spéciale pendant laquelle les utilisateurs peuvent uniquement y ajouter des vœux, mais pas les retirer. Lorsqu'ils consultent l'événement, ils ne voient pas leur propres vœux, ou alors séparément des autres, ou alors dans une mise-en-forme spéciale qui leur interdit de les consulter et ne leur donne aucune information sur leur potentiel achat.</p>
 
@@ -124,12 +132,23 @@ Un <em>Proof Of Concept</em> a déjà été développé, <a href="https://github
 Ainsi, même à la "fin" de l'événement le 25 décembre, le statut des "cadeaux" restera secret, afin de ne pas gâcher la surprise d'une réception après le 25 décembre. 
 Pendant cette phase, il sera possible d'ajouter des vœux à l'événement mais ni d'en enlever, ni de modifier ceux qui y sont attachés. Un utilisateur ayant ajouté un vœu ne pourra pas en connaitre le statut de réservation (le préservant ainsi de découvrir quels cadeaux lui seront offerts), mais il pourra consulter les statuts des vœux des autres utilisateurs, poser des options d'achat ou valider des achats.</p>
 
-<h3>
-<a name="ev%C3%A9nement-termin%C3%A9" class="anchor" href="#ev%C3%A9nement-termin%C3%A9"><span class="octicon octicon-link"></span></a>Evénement terminé</h3>
+<h4>
+<a name="ev%C3%A9nement-termin%C3%A9" class="anchor" href="#ev%C3%A9nement-termin%C3%A9"><span class="octicon octicon-link"></span></a>Evénement terminé</h4>
 
 <p>Un événement terminé est un événement qui a dépassé sa date de fin ET sa date de verrouillage si elle existe. L'événement est alors clôturé, c'est-à-dire qu'il n'est plus possible d'y ajouter un vœu. Les vœux qui y étaient présents rejoignent la liste privée de chacun des membres. L’événement n'est plus visible dans la liste des événements des utilisateurs en ayant fait partie.</p>
 
 <p>Exemple : à compter du 1er janvier, les vœux seront à nouveau visibles par les utilisateurs et rejoindront à nouveau leur liste privée. Ils pourront ainsi voir les éléments achetés par les autres utilisateurs, ou en option d'achat... mais cela ne devrait pas être un problème. L’événement terminant le 25 décembre, on peut supposer que les cadeaux auront été offerts avant !</p>
+
+<hr><h1>
+<a name="exp%C3%A9rience-utilisateur" class="anchor" href="#exp%C3%A9rience-utilisateur"><span class="octicon octicon-link"></span></a>Expérience Utilisateur</h1>
+
+<h2>
+<a name="notifications-de-modification-des-%C3%A9tats-du-syst%C3%A8me" class="anchor" href="#notifications-de-modification-des-%C3%A9tats-du-syst%C3%A8me"><span class="octicon octicon-link"></span></a>Notifications de modification des états du système</h2>
+
+<p>Parce qu'il manipule des données liées au temps (notamment aux dates des événements), Make A Wish devra réalisés des tests quotidiens, indépendamment des interactions utilisateurs, et modifier les statuts de certains événements et vœux. Ces statuts pourront également être modifiés par les actions des utilisateurs eux-mêmes. Toutes ces évolutions de statuts devront être signifiées à l'utilisateur courant... reste à imaginer comment (notifications ?).</p>
+
+<h2>
+<a name="saisie-dinformations" class="anchor" href="#saisie-dinformations"><span class="octicon octicon-link"></span></a>Saisie d'informations</h2>
         </section>
 
         <aside id="sidebar">
